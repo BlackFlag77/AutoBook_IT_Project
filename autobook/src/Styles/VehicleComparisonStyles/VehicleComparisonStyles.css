@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+}
+
+/*NavBar styles starts from here*/
+
+.nav--bar{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav-items-container{
+    width:40%;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nav-items-container a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.profile--holder{
+    width:5%;
+    height:80%;
+}
+.profile--icon{
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+}
+.logo{
+    font-size:20px;
+    font-weight:800;
+}
+
+
+/*Start of AddNewVehicle.js form css*/
+
+  .vcaddform-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .vcaddvehicle-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vcaddform-label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .vcaddform-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .vcaddform-input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .vcaddform-button {
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .vcaddform-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .vcaddform-container {
+    position: relative; /* Allow absolute positioning for child elements */
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    position: absolute; /* Position relative to the closest positioned ancestor */
+    top: 10px; /* Adjust distance from the top as needed */
+    right: 20px; /* Adjust distance from the right as needed */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 40px; /* Font size */
+    color: #dc3545; /* Red color for the close button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+  /*End of AddNewVehicle.js form css*/
+
+
+
+
+
+
+ /*Start of Vehicle.js and Vehicles.js (display every vehicle) files css*/
+
+/* General container styling */
+.vehicle-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vehicle title */
+.vehicle-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Specifications title */
+.specifications-title,
+.features-title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Specifications and features styling */
+.specifications p,
+.features label {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Vehicle image styling */
+.vehicle-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* If no image, show this text in red */
+.no-image {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Centering the search bar container */
+.search-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Search bar styling */
+.any-vehicle-searchbar {
+  flex: 1; /* Allows the search bar to take up available space */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* Container for search bar and button */
+.any-vehicle-searchbar-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers the container horizontally */
+  width: 100%;
+  max-width: 600px; /* Limits the width of the container */
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.any-vehicle-search-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Adds space between the search bar and button */
+}
+
+.any-vehicle-search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Different styles for delete button */
+.delete-button {
+  background-color: #dc3545;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Checkbox styling */
+.feature-checkbox {
+  margin-right: 10px;
+}
+
+/* Aligning buttons */
+.update-button, .delete-button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .vehicle-container {
+    padding: 15px;
+  }
+  
+  .vehicle-title {
+    font-size: 1.5rem;
+  }
+  
+  .specifications-title,
+  .features-title {
+    font-size: 1.3rem;
+  }
+
+  .any-vehicle-searchbar-container {
+    flex-direction: column;
+  }
+
+  .any-vehicle-searchbar, .any-vehicle-search-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .any-vehicle-search-btn, .update-button, .delete-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+
+ /*End of Vehicle.js and Vehicles.js (display every vehicle) files css*/
+
+
+
+ /*Start of Vehicle Compare Search*/
+
+
+ /* VehicleCompareSearch Component CSS */
+.vcs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.vcs-searchbars-container {
+  display: flex;
+  justify-content:space-around;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.vcs-searchbar1 {
+  margin-right: 200px;
+}
+
+.vcs-searchbar2 {
+  margin-left: 200px;
+}
+
+.vcs-searchbar1,
+.vcs-searchbar2 {
+  width: 45%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+
+
+.vcs-searchbtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 200px;
+  width: 100%;
+  box-shadow: 2px 2px 1px #888888;
+}
+
+.vcs-searchbtn:hover {
+  background-color: #0056b3;
+}
+
+.vcs-vehiclescompare-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  
+}
+
+.vcs-compare-winner {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+}
+
+
+
+.vcs-vehiclescompare-container > div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vcs-vehiclescompare-container > div h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.vcs-generate-btn {
+  border-radius: 10px;
+  max-width: 200px;
+  width: 100%;
+  color: #f8f9fa;
+  background-color: #e23546;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  box-shadow: 2px 2px 1px #888888;
+}
+
+.vcs-generate-btn:hover {
+  background-color: #bd1728;
+}
+
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .vcs-searchbars-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vcs-searchbar1,
+  .vcs-searchbar2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .vcs-vehiclescompare-container {
+    flex-direction: column;
+  }
+
+  .vcs-vehiclescompare-container > div {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/*Start of vehicle comparison home page*/
+
+.vc-homepage-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  color: #333;
+}
+
+.navbar {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .homepage-findyour-firstcar {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+} */
+
+.homepage-first-title{
+  margin-top: 10px;
+}
+
+.homepage-second-title {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+} 
+
+/* .vehicle-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+} */
+
+
+
+
+  /*VehicleSearch.js*/
+
+.anyvehicle-searchbar{
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #000;
+  margin-left: -50px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}   
+
+.anyvehicle-searchbar {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+} 
+
+.anyvehicle-searchbar:placeholder {
+  color: #ccc;
+}
+
+  /*End of VehicleSearch.js*/
+
+/* button {
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #000;
+  cursor: pointer;
+  margin-left: -50px;
+  transition: all 0.3s ease;
+} */
+
+/* button:hover {
+  background-color: #f0f0f0;
+} */
+
+
+/* .add-vehicle-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.add-vehicle-button {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
+.add-vehicle-button:hover {
+  background-color: #f0f0f0;
+  border-color: #000;
+}
+
+.add-vehicle-button svg {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+
+
+/*End of vehicle comparison*/

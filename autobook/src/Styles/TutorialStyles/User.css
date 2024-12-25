@@ -1,0 +1,74 @@
+/* User.css */
+.tutorial-card--inner{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.tutorial-card--inner::-webkit-scrollbar{
+ display: none;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    cursor: pointer; /* Indicate that the card is clickable */
+}
+
+.tutorial-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.tutorial-content {
+    margin: 10px 0;
+    color: #555; /* Slightly gray color for content */
+}
+
+.tutorial-likes {
+    width:100%;
+    padding: 25px 0;
+    font-weight: bold;
+}
+
+.visual-content-title {
+    margin: 10px 0;
+    font-size: 1.2em; /* Slightly smaller than the title */
+}
+
+.tutorial-image-container,
+.tutorial-video-container {
+    margin-bottom: 15px; /* Space below visual content */
+}
+
+.tutorial-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+    object-fit: cover; /* Ensure the content covers the box proportionally */
+}
+
+.tutorial-video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.view-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

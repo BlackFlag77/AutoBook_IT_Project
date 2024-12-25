@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+}
+.home--container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+  }
+  .main--title--1{
+    font-size:85px;
+    font-weight:bold;
+    position:absolute;
+    transition:0.4s ease;
+    position:absolute;
+    bottom:52%;
+    z-index:1;
+  }
+  .main--title--2{
+    font-size:85px;
+    font-weight: bold;
+    color:#ADD8E6;
+    transition:0.4s ease;
+    position:absolute;
+    bottom:38%;
+    z-index:1;
+  
+  }
+  .main--title--2:hover{
+    scale:105%;
+  
+  }
+  .main--title--1:hover{
+    scale:105%;
+  }
+  .home--note--button{
+    position:absolute;
+    bottom:22%;
+    width:132px;
+    height:42px;
+    border-radius:1000px;
+    margin-top:5%;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+    border:none;
+    font-size:15px;
+    transition:0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 4px 6px;
+    cursor:pointer;
+    border:2.5px solid #9fd5e6;
+  }
+  
+  .home--note--button:active{
+    width:132px;
+    height:42px;
+    font-size:15px;
+    scale:0.95;
+  }
+  .img--object{
+    width:60px;
+    height:60px;
+    top:0;
+    left:0;
+    object-fit: contain;
+    position:absolute;
+    padding:5px;
+    
+  }
+  .img--object:nth-child(1) {
+    top: 200px;
+    left: 50px;
+  }
+  
+  .img--object:nth-child(2) {
+    top: 200px;
+    left: 50px;
+  }
+  
+  .img--object:nth-child(3) {
+    top: 200px;
+    left: 100px;
+  }
+  
+  .img--object:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    
+  }
+  
+  .img--object:nth-child(5) {
+    top: 35%;
+    left: 85%;
+  }
+  .img--object:nth-child(6){
+    top:43%;
+    left:5%;
+    
+  }
+  .img--object:nth-child(7){
+    top:33%;
+    left:18%;
+    width:60px;
+  }
+  .img--object:nth-child(8){
+    top:15%;
+    left:40%;
+    width:60px;
+  }
+  .description{
+    position:absolute;
+    width:100%;
+    font-size:15px;
+    font-weight:600;
+    opacity:80%;
+    bottom:33%;
+    text-align:center;
+  
+  
+  }

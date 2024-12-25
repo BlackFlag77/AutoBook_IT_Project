@@ -1,0 +1,376 @@
+
+
+/*NavBar styles starts from here*/
+
+.nav--bar{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav-items-container{
+    width:40%;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nav-items-container a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.profile--holder{
+    width:5%;
+    height:80%;
+}
+.profile--icon{
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+}
+.logo{
+    font-size:20px;
+    font-weight:800;
+}
+
+/* Add Posts */
+
+ /* .forum-section {
+    padding: 20px;
+  }
+  
+  .forum-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-button, .create-post-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-post-button {
+    background-color: #007bff;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .post {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .post-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+  
+  .post-content h3 {
+    margin: 0;
+  }
+  
+  .post-info {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .vote-button, .comment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  } */
+   
+/* Forum.js */
+.container {
+  width: 65%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-post-button,
+.search-button,
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.add-post-button:hover,
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#container-post {
+  padding: 20px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between posts */
+}
+
+.report-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Post Card Styles */
+.post-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-title {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: left;
+}
+
+.post-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.post-image,
+video {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.reactions-and-comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reactions {
+  display: flex;
+  gap: 10px;
+}
+
+.like-button,
+.dislike-button,
+.comment-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #007bff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.update-button,
+.delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add Post form */
+.add-post-container,
+.update-post-container  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.form-wrapper,
+.update-wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  position: relative;
+}
+
+.form-header,
+.update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-header h2,
+.update-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.post-form label,
+.update-post-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="file"],
+.update-form input[type="text"],
+.update-form textarea,
+.update-form input[type="file"]  {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.post-form input[type="text"]:focus,
+.post-form textarea:focus,
+.post-form input[type="file"]:focus,
+.update-form input[type="text"]:focus,
+.update-form textarea:focus,
+.update-form input[type="file"]:focus  {
+  border-color: #007bff;
+  outline: none;
+}
+
+.post-form textarea, 
+.update-post-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn, 
+.update-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, 
+.update-btn:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  font-size: 1rem;
+}
+
+/* scaling on smaller screens */
+@media (max-width: 500px) {
+  .form-wrapper {
+      width: 90%;
+      padding: 1.5rem;
+  }
+}
